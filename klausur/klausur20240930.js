@@ -10,6 +10,9 @@ console.log("Aufgabe 1")
 // Geben Sie das Volumen in einem Antwortsatz auf der Konsole aus.
 
 
+console.log("Multiplikation:" + (a * b * c));
+
+
 
 
 // 1b 
@@ -32,17 +35,37 @@ console.log("Aufgabe 2")
 
 // 2a)
 // Definieren Sie die class
-
-
+class Schueler{
+    constructor(){
+        this.Englisch
+        this.Mathe
+        this.Deutsch
+        this.Geschichte
+      this.Politik
+        this.Betriebswirtschaftslehre
+        this.Religion
+        this.Biologie
+}
+}
 
 // 2b)
 // Deklarieren, Instanziieren und Initialisieren Sie ein Objekt von der Zeignisklasse.
+let schueler = new Scheuler()
 
+    schueler.Englisch = "1"
+    schueler.Mathe = "1"
+    schueler.Deutsch = "2"
+    schueler.Geschichte = "1"
+    schueler.Politik = "2"
+    schueler.Betriebswirtschaftslehre = "1"
+    schueler.Religion = "2"
+    schueler.Biologie = "1"
 
 
 
 // 2c)
 // Geben Sie die Eigenschaftswerte Ihres Objekts auf der Konsole aus.
+console.log("Englisch: " + schueler.Englisch + ", Mathe: " + schueler.Mathe + ", Deutsch: " + schueler.Deutsch + ", Geschichte: " + schueler.Geschichte + ", Politik: " + schueler.Politik + ", Betriebswirschaftslehre: " + schueler.Betriebswirtschaftslehre + ", Religion: " + schueler.Religion + ", Biologie: " + schueler.Biologie)
 
 
 
@@ -85,6 +108,16 @@ console.log("Aufgabe 3")
 
 // 3a)
 // Deklarieren, Instanziieren Sie ein Objekt mit allen genannten Eigenschaften. 
+class Verkauf{
+    constructor(){
+        this.Rabatt
+        this.NetoRechnungsbetrag
+        this.MwSt
+        this.BruttoRechnungsbetrag
+        this.Skonto
+        this.Zahlungsbetrag
+    }
+}
 
 
 
@@ -93,6 +126,12 @@ console.log("Aufgabe 3")
 // Initialisieren Sie Ihr Objekt mit den gegebenen Werten. 
 // Geben Sie die einen Anwortsatz auf der Konsole aus.
 
+let Rabatt = Listenpreis · Rabatt-Prozentsatz : 100 %
+let NettoRechnungsbetrag = Listenpreis – Rabatt
+let MwSt = Netto-Rechnungsbetrag · MwSt-Prozentsatz : 100 %
+let BruttoRechnungsbetrag = Netto-Rechnungsbetrag + MwSt
+let Skonto = Brutto-Rechnungsbetrag · Skonto-Prozentsatz : 100 %
+let Zahlungsbetrag = Brutto-Rechnungsbetrag – Skonto
 
 
 // 3c)
