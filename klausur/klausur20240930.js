@@ -86,6 +86,12 @@ console.log("Englisch: " + schueler.Englisch + ", Mathe: " + schueler.Mathe + ",
 // Beispiel der Anwendung von Math.min():
 // let x = Math.min(5, 10); --> Es werden 5 und 10 verglichen. x nimmt jetzt den Wert 5 an, da 5 der niedrigste der kommaseparierten Werte ist.
 
+let lisa = 3;
+let tom = 4;
+let max = 5;
+
+if(durchschnitt Mathe)
+
 
 
 
@@ -110,15 +116,20 @@ console.log("Aufgabe 3")
 // Deklarieren, Instanziieren Sie ein Objekt mit allen genannten Eigenschaften. 
 class Verkauf{
     constructor(){
-        this.Rabatt
-        this.NetoRechnungsbetrag
-        this.MwSt
+        this.Art
+        this.MehrwertsteuerSatz
+        this.Mehrwertsteuer
+        this.NettoRechnungsbetrag
         this.BruttoRechnungsbetrag
+        this.Skontosatz
         this.Skonto
         this.Zahlungsbetrag
+        this.Rabatt
+        this.Rabattsatz
     }
 }
 
+let produkt = new Produkt();
 
 
 
@@ -126,18 +137,24 @@ class Verkauf{
 // Initialisieren Sie Ihr Objekt mit den gegebenen Werten. 
 // Geben Sie die einen Anwortsatz auf der Konsole aus.
 
-let Rabatt = Listenpreis · Rabatt-Prozentsatz : 100 %
-let NettoRechnungsbetrag = Listenpreis – Rabatt
-let MwSt = Netto-Rechnungsbetrag · MwSt-Prozentsatz : 100 %
-let BruttoRechnungsbetrag = Netto-Rechnungsbetrag + MwSt
-let Skonto = Brutto-Rechnungsbetrag · Skonto-Prozentsatz : 100 %
-let Zahlungsbetrag = Brutto-Rechnungsbetrag – Skonto
+produkt.NettoRechnungsbetrag = 370 
+produkt.Art = "Zeitung"
 
+if(produkt.Art === "Zeitung" || produkt.Art === "Lebensmittel" || produkt.Art === "Buch"){
+    produkt.MehrwertsteuerSatz = 0.07
+}else{
+    produkt.MehrwertsteuerSatz = 0.19
+
+}
+
+console.log("Der MwST-Satz ist: " + produkt.MehrwertsteuerSatz)
 
 // 3c)
 // Berechnen Sie die MwSt in einer sprechenden Variablen. Geben Sie einen Anwortsatz auf der Konsole aus.
 
+produkt.Mehrwertsteuer = produkt.NettoRechnungsbetrag * produkt.MehrwertsteuerSatz
 
+console.log("Mehrwertsteuer: " + produkt.Mehrwertsteuer)
 
 
 
@@ -145,7 +162,7 @@ let Zahlungsbetrag = Brutto-Rechnungsbetrag – Skonto
 // Berechnen Sie den Eigenschaftswert des Brutto-Rechnungsbetrags. 
 // Wenn die Produktart sich ändert, muss Ihre Berechnung sich anpassen.
 // Geben Sie den Wert in einen Anwortsatz auf der Konsole aus.
-
+produkt.BruttoRechnungsbetrag = produkt.NettoRechnungsbetrag + produkt.Mehrwertsteuer
 
 
 
@@ -164,6 +181,16 @@ let Zahlungsbetrag = Brutto-Rechnungsbetrag – Skonto
 //                                  500 | 2
 
 // Berechnen Sie das Skonto und geben Sie das Ergebnis auf der Konsole aus.
+
+produkt.Skonto
+
+if(produkt.BruttoRechnungsbetrag < 900) { produkt.Skonto = 2.0 }
+if(produkt.BruttoRechnungsbetrag < 800) { produkt.Skonto = 2.0 }
+if(produkt.BruttoRechnungsbetrag < 700) { produkt.Skonto = 2.0 }
+if(produkt.BruttoRechnungsbetrag < 600) { produkt.Skonto = 2.0 }
+if(produkt.BruttoRechnungsbetrag < 500) { produkt.Skonto = 2.0 }
+if(produkt.BruttoRechnungsbetrag < 400) { produkt.Skonto = 2.0 }
+if(produkt.BruttoRechnungsbetrag < 900) { produkt.Skonto = 2.0 }
 
 console.log("Aufgabe 4") // NUR KLAUSURSCHREIBER
 
